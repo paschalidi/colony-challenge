@@ -66,7 +66,10 @@ Comments on the store architecture
 - Snapshots is included.
 - I tested only bussiness logic and not the functions that exists in the src/store/actions.js file. I find it a bit of an overload to test the simple functions there in this application.
 
-
+#### For keystrokes
+- 'o' will toggle the popover
+- arrows will navigate you around the avatars
+- 'enter' will make the selection of the next avatar
 
 This is all. I hope you enjoying my code style.
 The challenge was really fun and the explanation of the challenge itself very clear.
