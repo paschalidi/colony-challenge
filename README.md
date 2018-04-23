@@ -1,6 +1,5 @@
 ## Comments on the code challenge Description
-
-(You will find mu comments with **bold**.)
+You will find mu comments with **bold**.
 
 ## Colors and measurements (we won't count exact pixels):
 
@@ -64,7 +63,7 @@ Comments on the store architecture
 
 #### On src/components/{{COMPONENT_NAME}}/tests directory
 - I used Jest for testing.
-- A snapshot is included.
+- Snapshots is included.
 - I tested only bussiness logic and not the functions that exists in the src/store/actions.js file. I find it a bit of an overload to test the simple functions there in this application.
 
 
