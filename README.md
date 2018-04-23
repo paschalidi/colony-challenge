@@ -1,5 +1,7 @@
 Comments on the codeChallenge Description
 
+(You will find mu comments with **bold**.)
+
 Colors and measurements (we won't count exact pixels):
 
 - Avatar image
@@ -11,8 +13,7 @@ Colors and measurements (we won't count exact pixels):
     - border spinner, currently active avatar: color: rgb(122, 161, 178)
     - margin between two avatars: 14px
 - Popover
-  -  width: 280px
-    - Given that the whole popover is 280px this is not gonna work. As (60px) * 4 + (14px) * 5 = 310px and not 280px
+  -  **width: 280px : Given that the whole popover is 280px this is not gonna work. As (60px) * 4 + (14px) * 5 = 310px and not 280px**
   - height: variable
   - rounded corners of 2px radius
   - background: rgb(44, 48, 51)
@@ -29,9 +30,8 @@ How to submit your results:
 
 - The results have to be shared as a git repository
 - You can either create a private repository on your favourite git hosting provider (github, gitlab, bitbucket) and then give access to
-  -  chris@colony.io
-  -  raul@colony.io
-    - Github would say these are not existant accounts.
+  -  **chris@colony.io: Github would say these are not existant accounts.**
+  -  **raul@colony.io: Github would say these are not existant accounts.**
 - Or create a public repository and send the link to both of these email addresses
 - Or send the whole repository, zipped (including the .git directory) to both of these email addresses
 - Important note: please only submit your work when it is completely done!
