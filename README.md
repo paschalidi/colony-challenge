@@ -1,4 +1,4 @@
-## Comments on the code challenge Description
+# Comments on the code challenge Description
 You will find mu comments with **bold**.
 
 ## Colors and measurements (we won't count exact pixels):
@@ -39,7 +39,7 @@ You will find mu comments with **bold**.
 
 
 
-## Comments on Code Implementation
+# Comments on Code Implementation
 To implement the code I am using create-react-app accombanied with Redux for the state managment of the application.
 
 
