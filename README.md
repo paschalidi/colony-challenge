@@ -1,98 +1,81 @@
-## Colony frontend coding challenge
+Comments on the codeChallenge Description
 
-You'll be building a simple react component: an avatar picker. It looks like this:
+Colors and measurements (we won't count exact pixels):
 
-![Pick an avatar](https://github.com/JoinColony/coding-challenge/raw/master/avatar_picker.gif "Pick me!")
+- Avatar image
+  - height: 60px, width: 60px, perfect circles
+  - border for initial image: hover, focus 1px, color: rgb(155, 160, 163)
+  - avatar list images:
+    - border on hover: 3px border, color rgb(155, 160, 163);
+    - overlay on hover: color rgb(122, 161, 178), opacity: 20%
+    - border spinner, currently active avatar: color: rgb(122, 161, 178)
+    - margin between two avatars: 14px
+- Popover
+  -  width: 280px
+    - Given that the whole popover is 280px this is not gonna work. As (60px) * 4 + (14px) * 5 = 310px and not 280px
+  - height: variable
+  - rounded corners of 2px radius
+  - background: rgb(44, 48, 51)
+  - drop shadow: color: rgb(102, 102, 102), size 2px, blur 10px
+  - padding: 14px
+  - triangle: equilateral, 8px each side
+- "Choose your avatar" title
+  - font: 'Source Sans Pro' (use the google font)
+  - color: rgb(249, 249, 249)
+  - size: 16px
+  - margin top and bottom: 14px
 
-The user clicks on the avatar to open a popover which allows the user to choose another avatar from the list. After a click a (fake) HTTP request is made (while a loading spinner runs), the popover closes and the new avatar will appear in the inital view.
+How to submit your results:
 
-### Design and behaviour:
-
-* The initially shown avatar is the first in the given list of avatars
-* The initial avatar which opens the popover has a border of 1px on hover and active state
-* The avatar icons are shown in groups of 4, aligned left (with 6 icons it will exactly look like it does in the gif)
-* The popover opens with a scaling animation that overbounces a bit (see gif; you're free to choose values for the animation that look good in your opinion, or close to what you see above)
-* The currently chosen avatar has a blue border of 3px
-* The avatar list icons have grey border and are overlaid by a blue colored area with an opacity of 20% on hover
-* The loading spinner should look like shown above. It is also blue.
-* The popover fades out with a scaling animation (no overbounce)
-* A click outside the popover area will result in the popover closing
-* Simulate a server request/response by showing the spinner for exactly one second before choosing the avatar
-* The popover is closed when an avatar is chosen
-
-### Colors and measurements (we won't count exact pixels):
-
-* Avatar image
-  * height: 60px, width: 60px, perfect circles
-  * border for initial image: hover, focus 1px, color: rgb(155, 160, 163)
-  * avatar list images:
-    * border on hover: 3px border, color rgb(155, 160, 163);
-    * overlay on hover: color rgb(122, 161, 178), opacity: 20%
-    * border spinner, currently active avatar: color: rgb(122, 161, 178)
-    * margin between two avatars: 14px
-* Popover
-  * width: 280px
-  * height: variable
-  * rounded corners of 2px radius
-  * background: rgb(44, 48, 51)
-  * drop shadow: color: rgb(102, 102, 102), size 2px, blur 10px
-  * padding: 14px
-  * triangle: equilateral, 8px each side
-* "Choose your avatar" title
-  * font: 'Source Sans Pro' (use the google font)
-  * color: rgb(249, 249, 249)
-  * size: 16px
-  * margin top and bottom: 14px
-
-### Instructions:
-
-* This is going to be a react component which is being passed just one property: the list of available avatars. This list contains the src of the image file, the avatar label and a unique avatar id. The number of avatars can vary (let's say up to 12). For this example please use the following array:
-
-```
-[
-  { "src": "avatar1.png", "label": "Avatar 1", "id": 1 },
-  { "src": "avatar2.png", "label": "Avatar 2", "id": 2 },
-  { "src": "avatar3.png", "label": "Avatar 3", "id": 3 },
-  { "src": "avatar4.png", "label": "Avatar 4", "id": 4 },
-  { "src": "avatar5.png", "label": "Avatar 5", "id": 5 },
-  { "src": "avatar6.png", "label": "Avatar 6", "id": 6 }
-]
-```
-
-(you may adjust the paths to your needs of course)
-
-* Requested browser compatibility: IE11 and up, current versions of Chrome, FF, Safari
-* You may split up the main component in as many sub-components as you see fit
-* The whole component must also be fully usable when just using a keyboard
-* Think of it as a component that will end up in a large, scalable react app. Consider this when writing HTML and CSS as well.
-* You're free to use as many third party JS libraries that you see fit
-* You're NOT allowed to use any third party CSS libraries
-* You're free to use any build tools that you like (including CSS pre/post-processors). Do not focus on the tooling though. Choose tools that get you going quickly (when you're unsure, [create-react-app](https://github.com/facebookincubator/create-react-app/) might work well for you).
-* Only use the image assets given in this repository and do not modify the files in any way
-* Use proper semantics when writing HTML (for example: the avatar list has to be a `<ul>` and all the children just `<li>` elements)
-
-### Lots of extra :gem:s if you provide
-
-* A suite of unit tests written for this component using your favourite testing toolchain
-
-### How to submit your results:
-
-* The results have to be shared as a git repository
-* You can either create a private repository on your favourite git hosting provider (github, gitlab, bitbucket) and then give access to
-  * chris@colony.io
-  * raul@colony.io
-* Or create a public repository and send the link to both of these email addresses
-* Or send the whole repository, zipped (including the `.git` directory) to both of these email addresses
-* Important note: please only submit your work when it is completely done!
-
-Happy coding! :heart:
+- The results have to be shared as a git repository
+- You can either create a private repository on your favourite git hosting provider (github, gitlab, bitbucket) and then give access to
+  -  chris@colony.io
+  -  raul@colony.io
+    - Github would say these are not existant accounts.
+- Or create a public repository and send the link to both of these email addresses
+- Or send the whole repository, zipped (including the .git directory) to both of these email addresses
+- Important note: please only submit your work when it is completely done!
 
 
-### Attributions
 
-* Avatar icons by <a href="http://www.freepik.com/free-photos-vectors/people">Freepik</a>
 
-### License
 
-Some people seem to be forking and using this. That's great! If you like, submit your findings by creating an issue or submitting a PR.
-This repo is published under the MIT Licnse.
+Comments on Code Implementation
+
+To implement the code I am using create-react-app accombanied with Redux for the state managment of the application.
+
+
+
+Project File Structure
+
+- I am following the default file structure that create-react-app suggests. On top of that because I am also using Redux there was the need of a store creation. The store exists on the src/store directory.
+
+Comments on the store architecture
+
+- In my opinion in bigger applications even when using Redux there might be the need for creating more than one stores. And this is the approach I am following here. I seperate the store with its specific actions and actionTypes.
+
+
+
+Component File Architecture
+
+On src/components directory
+
+- Each component has its own directory with its tests and styling.
+
+On src/components/{{COMPONENT_NAME}}/index.js directory
+
+- Here one thing that might be interesting to note is that from taste perspective I prefer having the .css file written inside the component. The idea is that I prefer having less windows open while working. Just this approach keeps me more focused.
+
+On src/components/{{COMPONENT_NAME}}/tests directory
+
+- I used Jest for testing.
+- A snapshot is included.
+- I tested only bussiness logic and not the functions that exists in the src/store/actions.js file. I find it a bit of an overload to test the simple functions there in this application.
+
+
+
+This is all. I hope you enjoying my code style.
+
+The challenge was really fun and the explanation of the challenge itself very clear.
+
+I must say I really enjoyed working on it and I am waiting for you to give me your feedback.
