@@ -1,8 +1,8 @@
-##Comments on the code challenge Description
+## Comments on the code challenge Description
 
 (You will find mu comments with **bold**.)
 
-##Colors and measurements (we won't count exact pixels):
+## Colors and measurements (we won't count exact pixels):
 
 - Avatar image
   - height: 60px, width: 60px, perfect circles
@@ -26,7 +26,7 @@
   - size: 16px
   - margin top and bottom: 14px
 
-##How to submit your results:
+## How to submit your results:
 
 - The results have to be shared as a git repository
 - You can either create a private repository on your favourite git hosting provider (github, gitlab, bitbucket) and then give access to
@@ -40,12 +40,12 @@
 
 
 
-##Comments on Code Implementation
+## Comments on Code Implementation
 To implement the code I am using create-react-app accombanied with Redux for the state managment of the application.
 
 
 
-##Project File Structure
+## Project File Structure
 
 - I am following the default file structure that create-react-app suggests. On top of that because I am also using Redux there was the need of a store creation. The store exists on the src/store directory.
 
@@ -55,14 +55,14 @@ Comments on the store architecture
 
 
 
-##Component File Architecture
-####On src/components directory
+## Component File Architecture
+#### On src/components directory
 - Each component has its own directory with its tests and styling.
 
-####On src/components/{{COMPONENT_NAME}}/index.js directory
+#### On src/components/{{COMPONENT_NAME}}/index.js directory
 - Here one thing that might be interesting to note is that from taste perspective I prefer having the .css file written inside the component. The idea is that I prefer having less windows open while working. Just this approach keeps me more focused.
 
-####On src/components/{{COMPONENT_NAME}}/tests directory
+#### On src/components/{{COMPONENT_NAME}}/tests directory
 - I used Jest for testing.
 - A snapshot is included.
 - I tested only bussiness logic and not the functions that exists in the src/store/actions.js file. I find it a bit of an overload to test the simple functions there in this application.
