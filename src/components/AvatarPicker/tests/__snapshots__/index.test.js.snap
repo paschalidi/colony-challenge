@@ -278,6 +278,7 @@ exports[`AvatarPicker renders 1`] = `
                   }
     
                   .popover-title {
+                      font-family: 'Source Sans Pro', sans-serif;
                       color: rgb(249, 249, 249);
                       font-size: 16px;
                       margin: 10px 0;
