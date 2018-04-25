@@ -46,11 +46,6 @@ To implement the code I am using create-react-app accombanied with Redux for the
 - arrows will navigate you around the avatars
 - 'enter' will make the selection of the next avatar
 
-This is all. I hope you enjoying my code style.
-The challenge was really fun and the explanation of the challenge itself very clear.
-I must say I really enjoyed working on it and I am waiting for you to give me your feedback.
-
-
 # Comments on the code challenge Description
 You will find my comments with **bold**.
 
@@ -87,4 +82,11 @@ You will find my comments with **bold**.
 - Or create a public repository and send the link to both of these email addresses
 - Or send the whole repository, zipped (including the .git directory) to both of these email addresses
 - Important note: please only submit your work when it is completely done!
+
+
+
+
+This is all. I hope you enjoying my code style.
+The challenge was really fun and the explanation of the challenge itself very clear.
+I must say I really enjoyed working on it and I am waiting for you to give me your feedback.
 
