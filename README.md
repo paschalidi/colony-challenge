@@ -1,5 +1,5 @@
 # Comments on the code challenge Description
-You will find mu comments with **bold**.
+You will find my comments with **bold**.
 
 ## Colors and measurements (we won't count exact pixels):
 
