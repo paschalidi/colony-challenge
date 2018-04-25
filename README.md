@@ -86,7 +86,7 @@ You will find my comments with **bold**.
 
 
 # Final thoughts
-This is all. I hope you enjoying my code style.
+This is all. I hope you enjoying my coding style.
 The challenge was really fun and the explanation of the challenge itself very clear.
 I must say I really enjoyed working on it and I am waiting for you to give me your feedback.
 
