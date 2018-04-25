@@ -22,11 +22,10 @@ To implement the code I am using create-react-app accombanied with Redux for the
 
 
 ## Project File Structure
-
+#####General
 - I am following the default file structure that create-react-app suggests. On top of that because I am also using Redux there was the need of a store creation. The store exists on the src/store directory.
 
-##### Comments on the store architecture
-
+##### On the store architecture
 - In my opinion in bigger applications even when using Redux there might be the need for creating more than one stores. And this is the approach I am following here. I seperate the store with its specific actions and actionTypes.
 
 
